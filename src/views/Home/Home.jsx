@@ -29,6 +29,9 @@ export default function Home() {
  
  <p className='font-size'>{GREETINGS[GreetingsNumber]}</p>
     </div>
+    <p className='own-thoughts'>
+      Do you want to create your own Diwali Greetings? customize it here 👇
+    </p>
     <p className='link-url'>{import.meta.env.VITE_BASE_URL}?to={to}&from={from}&g={GreetingsNumber}&t={themeNumber}</p>
 
     <div className='input-field-container'>
@@ -48,7 +51,7 @@ export default function Home() {
         setFrom(e.target.value)
         }}/>
     
-    <select className='input-field' value={themeNumber} onChange={(e)=>{
+    <select className='input-field select-input-field' value={themeNumber} onChange={(e)=>{
        setThemeNumber(e.target.value)
       }}>
          <option>select</option>
@@ -60,7 +63,7 @@ export default function Home() {
     <option value="5">Theme-6</option>
       </select>
 
-      <select className='input-field' value={GreetingsNumber} onChange={(e)=>{
+      <select className='input-field select-input-field' value={GreetingsNumber} onChange={(e)=>{
        setGreetingNumber(e.target.value)
       }} >
         <option>select</option>
