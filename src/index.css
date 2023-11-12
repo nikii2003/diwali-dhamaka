@@ -3,3 +3,13 @@ font-size: 18px;
 color: rgb(15, 15, 15)
 
 }
+.text-center{
+  text-align: center;
+}
+/* body{
+  background-image: url('./views/Home/abstract-happy-diwali-festival-greeting-background-vector.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+} */
